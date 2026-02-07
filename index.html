@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Para ti 💖</title>
+  <title>Para ti mi yuli 💘🩶</title>
   <style>
     body {
       background: linear-gradient(135deg, #ff9a9e, #fad0c4);
@@ -43,26 +43,48 @@
 <body>
 
   <div class="carta">
-    <h1>💌 Para alguien muy especial</h1>
+    <h1>💌 Para ti, mi reina hermosa💘🩶</h1>
 
     <p>
-      Aquí escribe tu carta 💕  
-      Dile lo que sientes y lo importante que es para ti.
+      Mi yuli, Este 14 de febrero es una fecha muy importante,
+      por eso quiero que seas tu la que me acompañes para asi estar un rato agradable y hermoso para los dos,
+      porque desde que llegaste a mi vida me he sentido muy afortunado,
+      ya que eres una persona maravillosa e increible y tranquila solo sera una salida de amigos 🤭🤭,
+      una salida donde tu seras la protagonista de la noche y de mi vida 💘🩶💘🩶
     </p>
 
     <p>
-      ¿Quieres ser mi San Valentín? 💖
+      ¿Quieres ser mi San Valentín? 💘🩶
     </p>
 
     <button onclick="alert('💘 ¡Sabía que dirías que sí! 💘')">
       Sí 💕
     </button>
 
-    <button onclick="alert('🙈 Gracias por leer, ya me hiciste feliz')">
+    <button id="noBtn">
       Déjame pensarlo 🤭
     </button>
   </div>
+<script>
+  const noBtn = document.getElementById("noBtn");
 
+  noBtn.addEventListener("touchstart", moveButton,{ passive: false });
+  noBtn.addEventListener("click", moveButton);
+
+  function moveButton(e) {
+    e.preventDefault();
+
+    const maxX = window.innerWidth - noBtn.offsetWidth;
+    const maxY = window.innerHeight - noBtn.offsetHeight;
+
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
+
+    noBtn.style.position = "absolute";
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+  }
+</script>
 </body>
 </html>
  
