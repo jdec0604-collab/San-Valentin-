@@ -58,7 +58,7 @@
       ¿Quieres salir para asi demostrarte mi agradecimiento y cariño ? 💘🩶
     </p>
 
-    <button onclick="showLove()">
+    <button id="yesBtn" onclick="showLove()">
       Sí 💕
     </button>
 
@@ -94,7 +94,7 @@
   }
   function showLove () {
     document.getElementById("loveMessage").style.display = "block";
-    document.querySelector("button[onclick='showLove()']").style.display = "none";
+    document.getElementById("yesBtn").style.display = "none";
     document.getElementById("noBtn").style.display = "none";
   }
 </script>
